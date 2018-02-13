@@ -41,8 +41,6 @@ void cube_root(mpf_t& x, const mpf_t a);
 */
  //void print_pi(mpf_t pi);
 
-/***** Add more functions as necessary. *****/
-
 /**
  * The main.
  */
@@ -52,8 +50,6 @@ int main()
 
     mpf_t pi;
     mpf_init(pi);
-
-    /***** Complete this main. *****/
     
     calculate_pi(pi);         			// Function call to calculate_pi. 
     gmp_printf("%.1000000Ff\n",pi);
@@ -207,7 +203,6 @@ void calculate_pi(mpf_t& pi)
 
 void cube_root(mpf_t& x, const mpf_t a)
 {
-    /***** Complete this function. *****/
     mpf_set_default_prec(BIT_COUNT*PRECISION); 
     
     // Variable Declartion
